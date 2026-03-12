@@ -13,7 +13,9 @@ PlaywrightCourse/
     └── 04_hot_code.js           - Functions and iteration practice
 └── Chapter_02_JS_core_Concepts/
     ├── 05_core_JS_comment.js    - Single and multi-line comments
-    └── 06_core_JS_identifiers.js- Identifiers, literals, operators, and naming rules
+    ├── 06_core_JS_identifiers.js- Identifiers, literals, operators, and naming rules
+    ├── 07_core_JS_keywords.js   - JavaScript keywords
+    └── 08_let_var_const.js      - Variables and scope (let, var, const)
 ```
 
 ## 🛠 Prerequisites
@@ -45,7 +47,7 @@ PlaywrightCourse/
 Covers JavaScript fundamentals and environment setup as a foundation for Playwright automation.
 
 ### Chapter 02 — JS Core Concepts
-Covers JavaScript core concepts including comments, identifiers, literals, operators, and naming conventions.
+Covers JavaScript core concepts including comments, identifiers, literals, operators, keywords, naming conventions, and variable declarations (let, var, const).
 
 ## 📝 License
 

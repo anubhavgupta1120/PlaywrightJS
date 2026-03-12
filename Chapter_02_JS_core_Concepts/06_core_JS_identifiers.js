@@ -1,7 +1,7 @@
 //Identifiers, Literal, Operators
 let _name = "Anubhav";
 let $age = 25;
-let name = "Anubhav";
+let name$ = "Anubhav";
 let age = 25;
 
 var $name = "Anubhav";
@@ -30,8 +30,9 @@ Naming Conventions (best practices):
 //Operators : +, -, *, /, %, =, ==, ===, !=, !==, >, <, >=, <=
 console.log(_name);
 console.log($age);
-console.log(name);
+console.log(name$);
 console.log(age);
 console.log($name);
 console.log(_age);
 // In JS, semicolon is optional.
+
