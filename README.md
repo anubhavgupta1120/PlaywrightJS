@@ -11,6 +11,9 @@ PlaywrightCourse/
     ├── 02_JS_Step_By_Step.js    - JavaScript fundamentals (variables, loops, functions)
     ├── 03_verify_setup.js       - Verify Node.js environment setup
     └── 04_hot_code.js           - Functions and iteration practice
+└── Chapter_02_JS_core_Concepts/
+    ├── 05_core_JS_comment.js    - Single and multi-line comments
+    └── 06_core_JS_identifiers.js- Identifiers, literals, operators, and naming rules
 ```
 
 ## 🛠 Prerequisites
@@ -40,6 +43,9 @@ PlaywrightCourse/
 
 ### Chapter 01 — Basics
 Covers JavaScript fundamentals and environment setup as a foundation for Playwright automation.
+
+### Chapter 02 — JS Core Concepts
+Covers JavaScript core concepts including comments, identifiers, literals, operators, and naming conventions.
 
 ## 📝 License
 
