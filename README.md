@@ -6,7 +6,7 @@ A hands-on course for learning [Playwright](https://playwright.dev/) browser aut
 
 ```
 PlaywrightCourse/
-└── Chapter_01_Basics/
+└── Chapter_01_Basics_JavaScript/
     ├── 01_basic.js              - Hello World intro
     ├── 02_JS_Step_By_Step.js    - JavaScript fundamentals (variables, loops, functions)
     ├── 03_verify_setup.js       - Verify Node.js environment setup
@@ -33,7 +33,7 @@ PlaywrightCourse/
 
 3. **Run a script**
    ```bash
-   node Chapter_01_Basics/01_basic.js
+   node Chapter_01_Basics_JavaScript/01_basic.js
    ```
 
 ## 📚 Chapters
