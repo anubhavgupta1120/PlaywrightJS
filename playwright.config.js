@@ -19,6 +19,9 @@ const config = ({
   expect: {
     timeout: 5000,
   },
+  reporter: [
+    ['html', { outputFolder: 'playwright-report', open: 'on-failure' }],
+  ],
   use: {
     browserName: 'chromium',
     headless: false,
