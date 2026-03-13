@@ -1,0 +1,23 @@
+{
+  "name": "playwrightcourse",
+  "version": "1.0.0",
+  "description": "A hands-on course for learning [Playwright](https://playwright.dev/) browser automation using JavaScript.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anubhavgupta1120/PlaywrightJS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/anubhavgupta1120/PlaywrightJS/issues"
+  },
+  "homepage": "https://github.com/anubhavgupta1120/PlaywrightJS#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.5.0"
+  }
+}
