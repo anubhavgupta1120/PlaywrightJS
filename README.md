@@ -6,7 +6,7 @@ A hands-on course for learning [Playwright](https://playwright.dev/) browser aut
 
 ```
 PlaywrightCourse/
-├── playwright_commands.md       - Comprehensive cheat sheet for Playwright commands
+├── Playwright_JavaScript_Notes.md - Comprehensive Playwright course notes and cheat sheet
 └── Chapter_01_Basics_JavaScript/
     ├── 01_basic.js              - Hello World intro
     ├── 02_JS_Step_By_Step.js    - JavaScript fundamentals (variables, loops, functions)
