@@ -5,7 +5,7 @@ test.skip('Basic Playwright Test with page fixture', async ({ page }) => {
     await expect(page).toHaveTitle('Google');
 })
 
-test('Basic Playwright Test with browser fixture', async ({ browser }) => {
+test.skip('Basic Playwright Test with browser fixture', async ({ browser }) => {
     const context = await browser.newContext();
     const page = await context.newPage();
     await page.goto('https://rahulshettyacademy.com/loginpagePractise/');
@@ -22,7 +22,7 @@ test('Basic Playwright Test with browser fixture', async ({ browser }) => {
     await verifyGivenProductPresentInList('Blackberry', totalProductAvailable, titleOfProduct);
 })
 
-test('playwright by doing handsOn', async ({ browser }) => {
+test.skip('Practice HandsOn TestCase', async ({ browser }) => {
     const context = await browser.newContext();
     const page = await context.newPage();
     await page.goto('https://rahulshettyacademy.com/client/#/auth/login');
@@ -44,3 +44,41 @@ async function verifyGivenProductPresentInList(productName, totalProductAvailabl
         }
     }
 }
+
+test.describe('How to handle static dropdown, checkbox and radiobutton using playwright', () => {
+    test('Handling static dropdown', async ({ page }) => {
+        await page.goto('https://rahulshettyacademy.com/loginpagePractise/');
+        let dropdownVariable = page.locator('select.form-control');
+        await dropdownVariable.selectOption("teach");
+        await expect(dropdownVariable).toHaveValue('teach');
+    });
+    test('Handling and asserting radio button using Playwright', async ({ page }) => {
+
+        await page.goto('https://rahulshettyacademy.com/loginpagePractise/');
+        let radioBtn = page.locator('.radiotextsty');
+        await radioBtn.nth(1).click();
+        await page.locator("#okayBtn").click();
+        await expect(radioBtn.nth(1)).toBeChecked();
+        let res = await radioBtn.nth(1).isChecked();
+        expect(res).toBeTruthy();
+    });
+    test.only('Handling child window using playwright, asserting the blinking link and fetch the email from long text using split method', async ({ browser }) => {
+        const context = await browser.newContext();
+        const mainPage = await context.newPage();
+        await mainPage.goto('https://rahulshettyacademy.com/loginpagePractise/');
+        // Asserting the blinking link
+        const blinkingLink = mainPage.locator("a[href*='documents-request']");
+        await expect(blinkingLink).toHaveAttribute("class", "blinkingText");
+        // Handling child window using playwright
+        const [childPage] = await Promise.all([ // Expectation is that promise has to be fulfilled.
+            context.waitForEvent('page'), //Listen for any new page to be opened
+            blinkingLink.click()
+        ]);
+
+        const emailText = await childPage.locator(".red").textContent();
+        const email = emailText.split("@")[1].split(" ")[0];
+        console.log(email);
+        await mainPage.locator("#username").fill(email);
+        await expect(mainPage.locator("#username")).toHaveValue(email);
+    })
+})
