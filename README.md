@@ -17,6 +17,9 @@ PlaywrightCourse/
     ├── 06_core_JS_identifiers.js- Identifiers, literals, operators, and naming rules
     ├── 07_core_JS_keywords.js   - JavaScript keywords
     └── 08_let_var_const.js      - Variables and scope (let, var, const)
+└── tests/
+    ├── playwright_basic.spec.js - Locators, assertions, UI element handling, child windows
+    └── E2E_functionality.spec.js- Full E2E e-commerce flow (Cart, Checkout, Orders)
 ```
 
 ## 🛠 Prerequisites
@@ -49,6 +52,11 @@ Covers JavaScript fundamentals and environment setup as a foundation for Playwri
 
 ### Chapter 02 — JS Core Concepts
 Covers JavaScript core concepts including comments, identifiers, literals, operators, keywords, naming conventions, and variable declarations (let, var, const).
+
+### Playwright Tests (`tests/`)
+Hands-on Playwright testing examples:
+- **`playwright_basic.spec.js`**: Covers browsers contexts, dropdowns, radio buttons, checkpoints, and handling child windows/tabs.
+- **`E2E_functionality.spec.js`**: Demonstrates a complete End-to-End flow of an e-commerce platform including adding to cart, filling out forms, handling dynamic dropdowns, capturing Order IDs, and validating order history.
 
 ## 📝 License
 
