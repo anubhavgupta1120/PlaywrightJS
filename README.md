@@ -57,7 +57,7 @@ Covers JavaScript core concepts including comments, identifiers, literals, opera
 ### Playwright Tests (`tests/`)
 Hands-on Playwright testing examples:
 - **`playwright_basic.spec.js`**: Covers browsers contexts, dropdowns, radio buttons, checkpoints, and handling child windows/tabs.
-- **`playwright_locator.spec.js`**: Demonstrates Playwright's recommended `getBy` locators — `getByLabel`, `getByPlaceholder`, checkboxes, radio buttons, and dropdowns.
+- **`playwright_locator.spec.js`**: Demonstrates Playwright's recommended `getBy` locators — `getByLabel`, `getByPlaceholder`, `getByRole`, `getByText`, and filtering locators with `filter({ hasText })` for targeted element selection.
 - **`E2E_functionality.spec.js`**: Demonstrates a complete End-to-End flow of an e-commerce platform including adding to cart, filling out forms, handling dynamic dropdowns, capturing Order IDs, and validating order history.
 
 ## 📝 License
