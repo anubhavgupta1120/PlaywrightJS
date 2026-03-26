@@ -1,11 +1,11 @@
 import { test, expect } from '@playwright/test';
 
-test.skip('Basic Playwright Test with page fixture', async ({ page }) => {
+test('Basic Playwright Test with page fixture', async ({ page }) => {
     await page.goto('https://www.google.com');
     await expect(page).toHaveTitle('Google');
 })
 
-test.skip('Basic Playwright Test with browser fixture', async ({ browser }) => {
+test('Basic Playwright Test with browser fixture', async ({ browser }) => {
     const context = await browser.newContext();
     const page = await context.newPage();
     await page.goto('https://rahulshettyacademy.com/loginpagePractise/');
@@ -22,7 +22,7 @@ test.skip('Basic Playwright Test with browser fixture', async ({ browser }) => {
     await verifyGivenProductPresentInList('Blackberry', totalProductAvailable, titleOfProduct);
 })
 
-test.skip('Practice HandsOn TestCase', async ({ browser }) => {
+test('Practice HandsOn TestCase', async ({ browser }) => {
     const context = await browser.newContext();
     const page = await context.newPage();
     await page.goto('https://rahulshettyacademy.com/client/#/auth/login');
@@ -62,7 +62,7 @@ test.describe('How to handle static dropdown, checkbox and radiobutton using pla
         let res = await radioBtn.nth(1).isChecked();
         expect(res).toBeTruthy();
     });
-    test.only('Handling child window using playwright, asserting the blinking link and fetch the email from long text using split method', async ({ browser }) => {
+    test('Handling child window using playwright, asserting the blinking link and fetch the email from long text using split method', async ({ browser }) => {
         const context = await browser.newContext();
         const mainPage = await context.newPage();
         await mainPage.goto('https://rahulshettyacademy.com/loginpagePractise/');
