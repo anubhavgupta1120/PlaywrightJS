@@ -22,7 +22,8 @@ PlaywrightCourse/
     ├── playwright_locator.spec.js      - getBy locators (getByLabel, getByPlaceholder, etc.)
     ├── E2E_functionality.spec.js       - Full E2E e-commerce flow (Cart, Checkout, Orders)
     ├── E2E_functionalityUsingGetBY.spec.js - Full E2E flow utilizing getBy locators
-    └── HandlingCal.spec.js             - Interacting with and handling calendar UI components
+    ├── HandlingCal.spec.js             - Interacting with and handling calendar UI components
+    └── Validation.spec.js              - Handling UI validations, dialogs, hover, and frames
 ```
 
 ## 🛠 Prerequisites
@@ -63,6 +64,7 @@ Hands-on Playwright testing examples:
 - **`E2E_functionality.spec.js`**: Demonstrates a complete End-to-End flow of an e-commerce platform including adding to cart, filling out forms, handling dynamic dropdowns, capturing Order IDs, and validating order history.
 - **`E2E_functionalityUsingGetBY.spec.js`**: An alternative End-to-End flow leveraging Playwright's modern `getBy` locator strategies.
 - **`HandlingCal.spec.js`**: Demonstrates selecting precise dates (year, month, day) from a custom calendar component.
+- **`Validation.spec.js`**: Shows how to handle web dialogs (alerts/confirms), hover behaviors, and interact with nested iframes (`frameLocator`).
 
 ## 📝 License
 
